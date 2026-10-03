@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - dev
+      - x
 env:
   MONGODB_DB_NAME: TEST
   
