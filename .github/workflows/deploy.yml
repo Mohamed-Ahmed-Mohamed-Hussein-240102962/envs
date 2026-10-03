@@ -33,6 +33,9 @@ jobs:
       - name: Output information
         run: |
           echo "MONGODB_USERNAME: $MONGODB_USERNAME"
+          echo "PORT: $PORT"
+          echo "PORT: ${{env.PORT}}"
+          echo "PORT: ${{vars.PORT}}"
   deploy:
     needs: test
     runs-on: ubuntu-latest
